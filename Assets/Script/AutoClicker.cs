@@ -12,7 +12,6 @@ public class AutoClicker : MonoBehaviour
     private float basePrice = 10f;
 
     private float timer = 0f;
-    private float interval = 10f;  // Å‰‚Í1•b
 
     private void Update()
     {
