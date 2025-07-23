@@ -10,6 +10,11 @@ public class TimeManager : MonoBehaviour
 
     public TextMeshProUGUI timerText;
 
+    private void Start()
+    {
+        remainingTime = timeLimit;
+    }
+
     private void Update()
     {
         UpdateTimer();
@@ -24,7 +29,7 @@ public class TimeManager : MonoBehaviour
 
             int minutes = (int)(remainingTime / 60);
             int seconds = (int)(remainingTime % 60);
-            timerText.text = string.Format("{0:00}{1:00}", minutes, seconds);
+            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
         else
         {

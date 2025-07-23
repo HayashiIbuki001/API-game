@@ -1,5 +1,3 @@
-using JetBrains.Annotations;
-using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -25,7 +23,6 @@ public class ValueManager : MonoBehaviour
     {
         dollValue += 1f;
         dollText.text = $"{dollValue} $";
-        //Debug.Log($"èäéùã‡(Åê)ÅF{dollValue} Åê");
     }
 
     public void ConvartYen()
@@ -33,9 +30,8 @@ public class ValueManager : MonoBehaviour
         float yen = dollValue * exchangeRate;
         totalYen += yen;
         dollValue = 0f;
-        Debug.Log("ì˙ñ{â~Ç…ä∑ã‡ÇµÇ‹ÇµÇΩÅB");
-        //Debug.Log($"èäéùã‡(â~)ÅF{totalYen} â~");
-        yenText.text = $"{totalYen} â~";
+
+        yenText.text = $"{totalYen:F2} â~";
         dollText.text = $"{dollValue} $";
     }
 
@@ -43,7 +39,6 @@ public class ValueManager : MonoBehaviour
     {
         exchangeRate = Mathf.Round((1f / newRate) * 100f) / 100f;
         exchangeText.text = $"1$ = {exchangeRate} â~";
-        //Debug.Log("RateÅF" +  exchangeRate);
     }
 
     public bool CanSpend(float amount)

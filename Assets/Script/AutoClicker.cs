@@ -9,7 +9,7 @@ public class AutoClicker : MonoBehaviour
     [SerializeField] private Button buyButton;
 
     private int level = 0;
-    private float basePrice = 10f;
+    private float basePrice = 100f;
 
     private float timer = 0f;
 
@@ -18,7 +18,7 @@ public class AutoClicker : MonoBehaviour
         if (level > 0)
         {
             timer += Time.deltaTime;
-            float currentInterval = Mathf.Max(1f - 0.1f * (level - 1), 0.01f);
+            float currentInterval = Mathf.Max(10f - 0.1f * (level - 1), 0.01f);
 
             if (timer >= currentInterval)
             {
