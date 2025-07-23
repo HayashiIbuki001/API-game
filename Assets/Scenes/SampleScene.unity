@@ -1668,7 +1668,6 @@ GameObject:
   - component: {fileID: 1608510470}
   - component: {fileID: 1608510471}
   - component: {fileID: 1608510472}
-  - component: {fileID: 1608510473}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -1763,21 +1762,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCanvas: {fileID: 313134426}
   skillCanvas: {fileID: 1621269912}
---- !u!114 &1608510473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608510466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a7ebcbeb2aafd94ea07f6a39bee34db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  apiKey: YOUR_OPENWEATHERMAP_KEY
-  city: Tokyo
-  valueManager: {fileID: 1608510467}
 --- !u!1 &1621269912
 GameObject:
   m_ObjectHideFlags: 0
