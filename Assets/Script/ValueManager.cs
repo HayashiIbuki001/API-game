@@ -8,6 +8,8 @@ public class ValueManager : MonoBehaviour
     private float totalYen = 0f;
     private float exchangeRate = 100f;
 
+    public float dayMultiplier;
+
     public TextMeshProUGUI yenText;
     public TextMeshProUGUI dollText;
     public TextMeshProUGUI exchangeText;
